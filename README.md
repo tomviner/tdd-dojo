@@ -1,4 +1,4 @@
-tdd-coding-dojo
+TDD Coding Dojo
 ===============
 
 A place to practise our art
