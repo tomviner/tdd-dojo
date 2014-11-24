@@ -1,20 +1,20 @@
-- http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals
-- http://www.codersdojo.org/statistics/2d46b12c4807e04a6bd335342468f28b6436affchttps://github.com/jfpdazey/python-roman-numerals-kata
-- https://github.com/Azdaroth/exercism.io/tree/master/python/roman-numerals
+- [codingdojo](http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals)
+- [jfpdazey/python-roman-numerals-kata](http://www.codersdojo.org/statistics/2d46b12c4807e04a6bd335342468f28b6436affchttps://github.com/jfpdazey/python-roman-numerals-kata)
+- [Azdaroth/.../roman-numerals](https://github.com/Azdaroth/exercism.io/tree/master/python/roman-numerals)
 
 # Roman Numerals
 
 Write a function to convert from normal numbers to Roman Numerals: e.g.
-
-The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years. They invented concrete and straight roads and even bikinis. One thing they never discovered though was the number zero. This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers they came up with is still in use today. For example the BBC uses Roman numerals to date their programmes.
-
-The Romans wrote numbers using letters - I, V, X, L, C, D, M. (notice these letters have lots of straight lines and are hence easy to hack into stone tablets).
 
 ```
  1  => I
 10  => X
  7  => VII
 ```
+
+The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years. They invented concrete and straight roads and even bikinis. One thing they never discovered though was the number zero. This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers they came up with is still in use today. For example the BBC uses Roman numerals to date their programmes.
+
+The Romans wrote numbers using letters - I, V, X, L, C, D, M. (notice these letters have lots of straight lines and are hence easy to hack into stone tablets).
 
 There is no need to be able to convert numbers larger than about 3000. (The Romans themselves didn't tend to go any higher)
 
