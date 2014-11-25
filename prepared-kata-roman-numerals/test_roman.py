@@ -30,9 +30,10 @@ TEST_PAIRS_5 = TEST_PAIRS_4 + (
     (4, 'IV'),
     (9, 'IX'),
     (24, 'XXIV'),
-    (29, 'XXIX'),
+    (89, 'LXXXIX'),
 )
 TEST_PAIRS_FULL = TEST_PAIRS_5 + (
+    (90, 'XC'),
     (93, 'XCIII'),
     (99, 'XCIX'),
     (143, 'CXLIII'),

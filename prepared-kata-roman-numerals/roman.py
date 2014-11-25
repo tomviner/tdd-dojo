@@ -4,8 +4,9 @@ Roman Numerals
 
 Write a function to convert from normal numbers to Roman Numerals: e.g.
  1  => I
-10  => X
+ 4  => IV
  7  => VII
+10  => X
 99  => XCIX
 """
 
@@ -127,12 +128,8 @@ def to_roman_6(num):
 
 # Go recursive
 def to_roman_7(num):
-    def to_roman_gen(num):
-        if not num:
-            return ''
-        for digit, letter in DIGIT_MAP_6:
-            if num >= digit:
-                yield letter
-                yield from to_roman_gen(num - digit)
-                break
-    return ''.join(to_roman_gen(num))
+    for digit, letter in DIGIT_MAP_6:
+        if num >= digit:
+            return letter + (
+                to_roman_7(num - digit) or ''
+            )
