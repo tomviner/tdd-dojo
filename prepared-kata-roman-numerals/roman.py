@@ -1,3 +1,4 @@
+from __future__ import print_function
 """
 Roman Numerals
 
@@ -116,3 +117,16 @@ def to_roman_6(num):
             result += letter
             remainder -= digit
     return result
+
+# Go recursive
+
+def to_roman_7(num):
+    def to_roman_gen(num):
+        if not num:
+            return ''
+        for digit, letter in DIGIT_MAP_6:
+            if num >= digit:
+                yield letter
+                yield from to_roman_gen(num - digit)
+                break
+    return ''.join(to_roman_gen(num))

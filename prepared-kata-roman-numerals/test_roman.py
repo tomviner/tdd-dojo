@@ -32,7 +32,7 @@ TEST_PAIRS_5 = TEST_PAIRS_4 + (
     (24, 'XXIV'),
     (29, 'XXIX'),
 )
-TEST_PAIRS_6 = TEST_PAIRS_5 + (
+TEST_PAIRS_FULL = TEST_PAIRS_5 + (
     (93, 'XCIII'),
     (99, 'XCIX'),
     (143, 'CXLIII'),
@@ -61,6 +61,10 @@ def test_roman_4(num, roman):
 def test_roman_5(num, roman):
     assert to_roman_5(num) == roman
 
-@pytest.mark.parametrize('num,roman', TEST_PAIRS_6)
+@pytest.mark.parametrize('num,roman', TEST_PAIRS_FULL)
 def test_roman_6(num, roman):
     assert to_roman_6(num) == roman
+
+@pytest.mark.parametrize('num,roman', TEST_PAIRS_FULL)
+def test_roman_7(num, roman):
+    assert to_roman_7(num) == roman
