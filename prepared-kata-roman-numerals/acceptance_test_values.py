@@ -1,6 +1,6 @@
 """
 From http://www.diveintopython3.net/unit-testing.html
-Copyright 2001–11 Mark Pilgrim
+Copyright 2001-11 Mark Pilgrim
 """
 ACCEPTANCE_TEST_PACK = (
     (1, 'I'),
