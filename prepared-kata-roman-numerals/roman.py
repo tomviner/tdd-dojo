@@ -9,6 +9,7 @@ Write a function to convert from normal numbers to Roman Numerals: e.g.
 99  => XCIX
 """
 
+
 # Simple if chain
 def to_roman_1(num):
     if num == 50:
@@ -18,6 +19,7 @@ def to_roman_1(num):
     if num == 5:
         return 'V'
     return 'I'
+
 
 # Separate data from functionality
 # Add print to show what's happening
@@ -36,6 +38,7 @@ def to_roman_2(num):
             ))
             result = letter
     return result
+
 
 # Think about basic algorithm
 # remainder!
@@ -59,6 +62,7 @@ def to_roman_3(num):
             remainder -= digit
     return result
 
+
 # Keep taking repeat letters that we need
 DIGIT_MAP_4 = (
     (50, 'L'),
@@ -75,6 +79,7 @@ def to_roman_4(num):
             remainder -= digit
     return result
 
+
 # Special case the subtractions
 DIGIT_MAP_5 = (
     (50, 'L'),
@@ -90,6 +95,7 @@ def to_roman_5(num):
             result += letter
             remainder -= digit
     return result.replace('VIIII', 'IX').replace('IIII', 'IV')
+
 
 # Generalise the subtractions
 # Run full acceptance test pack!
@@ -118,8 +124,8 @@ def to_roman_6(num):
             remainder -= digit
     return result
 
-# Go recursive
 
+# Go recursive
 def to_roman_7(num):
     def to_roman_gen(num):
         if not num:
